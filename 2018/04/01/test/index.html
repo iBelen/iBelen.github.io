@@ -1,0 +1,40 @@
+<script type="text/javascript">
+    function disp_alert()
+{
+alert("我是警告框！！")
+}
+
+function disp_alert2()
+{
+alert("再次向您问好！在这里，我们向您演示" + '\n' + "如何向警告框添加折行。")
+}
+
+function disp_prompt()
+  {
+  var name=prompt("请输入您的名字","Bill Gates")
+  if (name!=null && name!="")
+    {
+    document.write("你好！" + name + " 今天过得怎么样？")
+    }
+  }
+
+  function show_confirm()
+{
+var r=confirm("Press a button!");
+if (r==true)
+  {
+  alert("You pressed OK!");
+  }
+else
+  {
+  alert("You pressed Cancel!");
+  }
+}
+</script>
+
+<p><input type="button" onclick="disp_alert()" value="显示警告框"></p>
+<p><input type="button" onclick="disp_alert2()" value="显示折行警告框"></p>
+<p><input type="button" onclick="disp_prompt()" value="提示框"></p>
+<input type="button" onclick="show_confirm()" value="确认框">
+
+<p>2018/04/01</p>
